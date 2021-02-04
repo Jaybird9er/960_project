@@ -88,6 +88,7 @@ body {
 .container_12 .grid_12,
 .container_16 .grid_16 {
   width: 940px;
+  background-color: black;
 }
 
 /* `Grid >> Children (Alpha ~ First, Omega ~ Last)
