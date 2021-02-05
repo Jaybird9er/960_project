@@ -73,11 +73,18 @@ body {
 .container_12 .grid_3,
 .container_16 .grid_4 {
   width: 220px;
+  float: left;
+}
+
+p {
+  line-height: 25px;
 }
 
 .container_12 .grid_6,
 .container_16 .grid_8 {
   width: 460px;
+  /* float: right;  */
+  line-height: 1.5em;
 }
 
 .container_12 .grid_9,
