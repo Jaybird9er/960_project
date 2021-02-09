@@ -72,25 +72,24 @@ body {
 
 /* header setttings */
 
-h1, h2, h3, h4, h5, h6 {
-  /* margin-top: 10px;
-  margin-bottom: 2rem; */
+h1, h2, h3, h4, h5, h6, li{
   font-weight: 300; }
-h1 { font-size: 3.5rem; line-height: 1.25;  letter-spacing: -.1rem;}
-h2 { font-size: 2.0rem; line-height: 1.3; letter-spacing: -.1rem;}
-h3 { font-size: 1.5rem; line-height: 1.35;  letter-spacing: -.08rem;}
+h1 { font-size: 3.7rem; line-height: 1.25;  letter-spacing: -.1rem;}
+h2 { font-size: 2.3rem; line-height: 1.29; letter-spacing: -.1rem;}
+h3 { font-size: 1.7rem; line-height: 1.35;  letter-spacing: -.08rem;}
 h4 { font-size: 1.3rem; line-height: 1.5; letter-spacing: -.05rem;}
 h5 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;}
 h6 { font-size: 1.0rem; line-height: 1.75;  letter-spacing: 0;}
+li { font-size: 1.3rem; line-height: 1.5; letter-spacing: -.05rem;}
 
 
 /* Since only grids 3, 6, 9, an 12 are used, all css realted to those grids follows below*/
 
 html {
-  background-color: darkslategray;
   display: table;
   margin-left: auto;
   margin-right: auto;
+  background-color: darkslategray;
 }
 
 body {
@@ -103,18 +102,35 @@ body {
   width: 220px;
 }
 
-.grid_3 {
+.grid_4 {
   display: flex;
   align-items: center;
   height: 100px;
-  background-color: cadetblue;
+  min-width: 260px;
   padding: 0 0 0 40px; 
-  /* line-height: 2rem; */
+  margin-bottom: 15px;
+  border-radius: 15px;
   font-weight: 100;
-  min-width: 180px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px; 
-  margin-bottom: 20px;
+  background-color: cadetblue;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.container_12 .grid_5 {
+  width: 380px;
+}
+
+.grid_5 {
+  min-width: 310px;
+  max-width: 310px;
+  padding: 40px 20px 20px 50px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 15px;
+  font-weight: 800;
+  background-color: red;
+  word-wrap: break-word;
+}
+.list {
+  list-style-type: decimal-leading-zero;
 }
 
 .container_12 .grid_6,
@@ -122,9 +138,33 @@ body {
   width: 460px;
 }
 
-.grid_6 {
+.container_12 .grid_7 {
+  width: 540px;
+}
+
+.grid_7 {
   background-color: red;
-  min-width: 460px;
+  max-width: 540px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-size: contain;
+  border-radius: 15px;
+}
+
+.container_12 .grid_10 {
+  width: 780px;
+}
+
+.grid_10 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  min-width: 540px;
+  padding-left: 80px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background-color: aquamarine;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .container_1h2 .grid_9,
@@ -132,17 +172,6 @@ body {
   width: 700px;
 }
 
-.grid_9 {
-  position: relative;
-  min-width: 660px;
-  display: flex;
-  align-items: center;
-  padding: 0 0 0 40px;
-  height: 100px;
-  background-color: aquamarine;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
 
 .container_12 .grid_12,
 .container_16 .grid_16 {
@@ -152,19 +181,35 @@ body {
 .grid_12  {
   display: flex;
   align-items: center;
-  height: 140px;
-  font-size: 2rem;
-  padding: 20px 0;
-  background-color: gray;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
   min-width: 940px;
-  margin-bottom: 20px;
+  height: 140px;
+  padding: 20px 0;
+  margin: 15px 10px 20px 10px;
+  border-radius: 15px;
+  font-size: 2rem;
   text-indent: 1em;
-  /* height: 80px; */
-  /* line-height: 5em; */
-  /* position: relative; */
-  /* top: -30px; */
+  background-color: gray;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+a:link, a:visited, a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.test {
+  visibility: hidden;
+  display: none;
+}
+:target {
+    visibility: visible;
+    display: flex;
+    width: 500px;
+    height: 510px;
+    padding: 10px 20px;
+    justify-content: center;
+    border-radius: 15px;
 }
 
 /* `Grid >> Children (Alpha ~ First, Omega ~ Last)
