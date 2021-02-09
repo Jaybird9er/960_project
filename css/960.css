@@ -72,15 +72,20 @@ body {
 
 /* header setttings */
 
-h1, h2, h3, h4, h5, h6, li{
-  font-weight: 300; }
-h1 { font-size: 3.7rem; line-height: 1.25;  letter-spacing: -.1rem;}
-h2 { font-size: 2.3rem; line-height: 1.29; letter-spacing: -.1rem;}
-h3 { font-size: 1.7rem; line-height: 1.35;  letter-spacing: -.08rem;}
+h1, h2, h3, h4, h5, h6, li {
+  font-weight: 400;
+  font-family: Roboto, sans-serif; }
+h1 { font-size: 3.7rem; line-height: 1.25;  letter-spacing: -.1rem; font-weight: 100;}
+h2 { font-size: 2.3rem; line-height: 1.29; letter-spacing: -.1rem; font-weight: 100;}
+h3 { font-size: 1.7rem; line-height: 1.35;  letter-spacing: -.08rem; font-weight: 700;}
 h4 { font-size: 1.3rem; line-height: 1.5; letter-spacing: -.05rem;}
 h5 { font-size: 1.2rem; line-height: 1.6;  letter-spacing: 0;}
 h6 { font-size: 1.0rem; line-height: 1.75;  letter-spacing: 0;}
 li { font-size: 1.3rem; line-height: 1.5; letter-spacing: -.05rem;}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
 /* Since only grids 3, 6, 9, an 12 are used, all css realted to those grids follows below*/
@@ -89,7 +94,7 @@ html {
   display: table;
   margin-left: auto;
   margin-right: auto;
-  background-color: darkslategray;
+  background-color: #444;
 }
 
 body {
@@ -111,7 +116,8 @@ body {
   margin-bottom: 15px;
   border-radius: 15px;
   font-weight: 100;
-  background-color: cadetblue;
+  color: #eee;
+  background-color: #333;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -122,11 +128,12 @@ body {
 .grid_5 {
   min-width: 310px;
   max-width: 310px;
-  padding: 40px 20px 20px 50px;
+  padding: 40px 20px 50px 50px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   border-radius: 15px;
   font-weight: 800;
-  background-color: red;
+  color: #234;
+  background-color: #aaa;
   word-wrap: break-word;
 }
 .list {
@@ -143,7 +150,7 @@ body {
 }
 
 .grid_7 {
-  background-color: red;
+  background-color: #555;
   max-width: 540px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   background-size: contain;
@@ -163,8 +170,13 @@ body {
   padding-left: 80px;
   margin-bottom: 15px;
   border-radius: 15px;
-  background-color: aquamarine;
+  color: #222;
+  background-color: #ccc;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+h3 {
+  font-weight: bolder;
 }
 
 .container_1h2 .grid_9,
@@ -188,14 +200,19 @@ body {
   border-radius: 15px;
   font-size: 2rem;
   text-indent: 1em;
-  background-color: gray;
+  color: white;
+  background-color: black;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-a:link, a:visited, a:hover {
+a:link, a:visited {
   text-decoration: none;
-  color: black;
+  color: #123;
   font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .test {

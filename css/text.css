@@ -1,5 +1,5 @@
 /*
-  960 Grid System ~ Text CSS.
+  960 Grid System ~ Text fon.
   Learn more ~ http://960.gs/
 
   Licensed under GPL and MIT.
@@ -14,7 +14,8 @@ body {
 
 pre,
 code {
-  font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace;
+  /* font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace; */
+  font-family: 'Roboto', sans-serif;
 }
 
 hr {
