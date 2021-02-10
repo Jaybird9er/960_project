@@ -152,6 +152,9 @@ body {
 .list {
   list-style-type: decimal-leading-zero;
 }
+.sublist {
+  list-style-type: lower-alpha;
+}
 
 .container_12 .grid_6,
 .container_16 .grid_8 {
