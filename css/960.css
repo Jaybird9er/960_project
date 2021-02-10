@@ -34,9 +34,9 @@ body {
 .grid_2,
 .grid_3,
 .grid_4,
-.grid_5,
+/* .grid_5, */
 .grid_6,
-.grid_7,
+/* .grid_7, */
 .grid_8,
 .grid_9,
 .grid_10,
@@ -87,6 +87,11 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.intro {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
 
 /* Since only grids 3, 6, 9, an 12 are used, all css realted to those grids follows below*/
 
@@ -125,17 +130,25 @@ body {
   width: 380px;
 }
 
+.wrapper {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
 .grid_5 {
-  min-width: 310px;
-  max-width: 310px;
-  padding: 40px 20px 50px 50px;
+  min-height: 520px;
+  padding: 30px 20px 20px 50px;
+  margin: 0;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   border-radius: 15px;
   font-weight: 800;
   color: #234;
-  background-color: #aaa;
-  word-wrap: break-word;
+  background-color: #fff;
+  /* word-wrap: break-word; */
 }
+
 .list {
   list-style-type: decimal-leading-zero;
 }
@@ -150,11 +163,14 @@ body {
 }
 
 .grid_7 {
+  float: right;
   background-color: #555;
   max-width: 540px;
+  margin: 30px 10px 10px 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   background-size: contain;
   border-radius: 15px;
+  object-fit: contain;
 }
 
 .container_12 .grid_10 {
@@ -163,6 +179,7 @@ body {
 
 .grid_10 {
   display: flex;
+  float: right;
   align-items: center;
   position: relative;
   height: 100px;
@@ -211,22 +228,19 @@ a:link, a:visited {
   font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-.test {
+.show_img {
   visibility: hidden;
   display: none;
 }
 :target {
     visibility: visible;
     display: flex;
-    width: 500px;
-    height: 510px;
+    float: right;
+    width: 490px;
+    height: 500px;
+    object-fit: contain;
     padding: 10px 20px;
     justify-content: center;
-    border-radius: 15px;
 }
 
 /* `Grid >> Children (Alpha ~ First, Omega ~ Last)

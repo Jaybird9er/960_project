@@ -14,52 +14,121 @@
     <!--gird_12 width: 940px ~ banner-->
     <div class="grid_12">
         <h1>
-            get started on git
+            <a href="index.html" style="font-size: 3.7rem; line-height: 1.25;  letter-spacing: -.1rem; font-weight: 100; color: white;">get started on git</a>
         </h1>
+    </div>  <div class="clear"></div>
+    <!-- end .grid_12-->
+    <!--gird_12 width: 940px ~ banner-->
+    <div class="wrapper">
+        <p class="intro">
+            This guide was written to help new coders get started using Git right away. The guide will not get you all the way there, but just far enough along to begin using it on your own. In this way, you can start to learn some of the basics of how to use Git while you learn web or software development. To be clear, this is part one of a two part guide. The second guide will be designed to help users prepare for working on larger projects and in groups. For now, this should be enough for very early beginners.
+        </p>
     </div>  <div class="clear"></div>
     <!-- end .grid_12-->
     <!--grid_4 width: 300px ~ step number-->
     <div class="grid_4">
         <h2>
-            Step #00
+            step 01
         </h2>
     </div>
     <!-- end .grid_4 -->
     <!--grid_10 width: 660px ~ step title-->
     <div class="grid_10">
         <h3>
-            Step Title
+            get started on GitHub and Git
         </h3>
     </div>
     <div class="clear"></div>
     <!--end .grid_10-->
-    <!--grid_5 width: 380px ~ list of steps-->
     <div class="wrapper">
-
+        <!--grid_7 width: 540px ~ image-->
+        <div class="grid_7">
+            <div class="show_img" id="01"><img src="img/01_github.png"></div>
+            <div class="show_img" id="02"><img src="img/02_new_repo.png"></div>
+            <div class="show_img" id="03"><img src="img/03_atlassian.png"></div>
+        </div>
+        <!-- end .grid_7 -->
+        <!--grid_5 width: 380px ~ list of steps-->
         <div class="grid_5">
-            <ol>
-                <li class="list">
-                    <a href="#one">This is first.</a>
+            <ol class="list">
+                <li>
+                    <a href="#01">Sign up for an account on <a href="https://github.com/" target="_blank" style="color: white; letter-spacing: 0; background-color: black;">GitHub</a>.</a>
+                </li>
+                <li>
+                    <a href="#02">Create a New Repository (project) on Github.</a>
                     <p>
-                        This is first.This is first.This is first.This is first.This is first.This is first.This is first.This is fThis is first. This is first. irst. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. This is first. 
+                        Add repository name. You can use something like, my_repo to practice, or use a name for a current project. Add a description. Hit <b>Create Repository</b>.
                     </p>
+                    <br>
+                    <p>
+                        Ideally, it would be best to check if Git is already installed on your computer. However, since this is a guide for beginners, we can skip that step.
+                    </p>
+                    <br>
                 </li>
-                <li class="list">
-                    <a href="#two">This is second.</a>
-                </li>
-                <li class="list">
-                    <a href="#three">This is three.</a>
+                <li>
+                    <a href="#03">To install Git, go <a href="https://www.atlassian.com/git/tutorials/install-git" target="_blank" style="color: white; letter-spacing: 0; background-color: black;">here</a>.</a>
+                    <p>
+                        For Windows, it's best to select the <b>Git Bash</b> option during installation to install a command line app.
+                        For Mac, it's best to use the <b>Git for Mac Installer</b>.
+                    </p>
                 </li>
             </ol>
         </div>
+        <div class="clear"></div>
         <!-- end .grid_5 -->
+    </div>
+    <div class="clear"></div>
+    <!--grid_4 width: 300px ~ step number-->
+    <div class="grid_4">
+        <h2>
+            step 02
+        </h2>
+    </div>
+    <!-- end .grid_4 -->
+    <!--grid_10 width: 660px ~ step title-->
+    <div class="grid_10">
+        <h3>
+            connect your GitHub account (Mac)
+        </h3>
+    </div>
+    <div class="clear"></div>
+    <!--end .grid_10-->
+    <div class="wrapper">
         <!--grid_7 width: 540px ~ image-->
         <div class="grid_7">
-            <div class="test" id="one"><img src="https://bit.ly/fcc-relaxing-cat"></div>
-            <div class="test" id="two"><img src="https://i2.wp.com/ceklog.kindel.com/wp-content/uploads/2013/02/firefox_2018-07-10_07-50-11.png?w=641&ssl=1"></div>
-            <div class="test" id="three"><img src="https://bit.ly/fcc-relaxing-cat"></div>
+            <div class="show_img" id="04"><img src="img/04_new_SSH.png"></div>
+            <div class="show_img" id="05"><img src="https://i2.wp.com/ceklog.kindel.com/wp-content/uploads/2013/02/firefox_2018-07-10_07-50-11.png?w=641&ssl=1"></div>
+            <div class="show_img" id="06"><img src="https://bit.ly/fcc-relaxing-cat"></div>
         </div>
+        <!-- end .grid_7 -->
+        <!--grid_5 width: 380px ~ list of steps-->
+        <div class="grid_5">
+            <ol class="list">
+                <li >
+                    <a href="#04">To connect your computer to your GitHub account, you first need to generate an SSH key.</a>
+                    <br>
+                    <br>
+                    <!-- 2 breaks needed to match prior format -->
+                    <p>
+                        If you're using Windows, you can avoid the following by just downloading the <a href="https://desktop.github.com/" target="_blank" style="color: white; letter-spacing: 0; background-color: black;">GitHub Desktop app</a> to clone repositories and not deal with SSH Keys. However, it's recomended that you follow the steps below so you can learn to set up and use Git anywhere.
+                    </p>
+                    <br>
+                </li>
+                <li>
+                    <a href="#05">Don't forget Homebrew. </a>
+                    <br>
+                    <p>
+                        <a href="https://desktop.github.com/" target="_blank" style="color: white; letter-spacing: 0; background-color: black;">Homebrew</a> after running the Git for Mac Installer, you need to run in it in your Terminal, or you'll have a big problem if you don't do it.
+                    </p>
+                </li>
+                <li>
+                    <a href="#three">This is third.</a>
+                </li>
+            </ol>
+        </div>
+        <div class="clear"></div>
+        <!-- end .grid_5 -->
     </div>
-        <!-- end .grid_6 -->
+    <div class="clear"></div>
 </body>
 </html>
